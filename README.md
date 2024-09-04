@@ -1,5 +1,5 @@
 # EXP2 - Numerical Python <br/> *Christian Justin M. Fernando | 2ECE-B | ECE2112*
-Hello! This repository contains Python codes I made for my ECE2112 course, particularly for Experiment #2. <br/><br/> For experiment #1 the problems and instructions are:
+Hello! This repository contains Python codes I made for my ECE2112 course, particularly for Experiment #2. <br/><br/> For experiment #2 the problems and instructions are:
 
 
 
