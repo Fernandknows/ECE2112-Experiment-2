@@ -8,6 +8,8 @@ data analytics. This involves centering and scaling process. Centering means sub
 mean and scaling means dividing with its standard deviation. Mathematically, normalization can be expressed as: 𝑍 =(𝑋 − 𝑥̅) / 𝜎
 In Python, element-wise mean and element-wise standard deviation can be obtained by using .mean() and.std() calls. In this problem, create a random 5 x 5 ndarray and store it to variable X. Normalize X. Save your normalized ndarray as X_normalized.npy <br/>
 
+**Function:**
+
   ```
   #Assign numpy to be np.
   import numpy as np
@@ -45,6 +47,8 @@ Your file has been saved as 'X_normalized.npy' successfully!
 **2. Divisible by 3 Problem:** Create the following 10 x 10 ndarray, Which are the squares of the first 100 positive integers.
 From this ndarray, determine all the elements that are divisible by 3. Save the result as div_by_3.npy
 
+**Function:**
+
 ```
 #Assign numpy to be np.
 import numpy as np
@@ -73,7 +77,7 @@ np.save('div_by_3.npy', div_by_3)
 #Output to prompt the user that the file has been saved as 'div_by_3.npy' succesfully.
 print("\nYour file has been saved as 'div_by_3.npy' successfully!")
 ```
-**Output Example: **
+**Output Example:**
 ```
 A 10x10 Array of Squared Numbers:
 [[    1     4     9    16    25    36    49    64    81   100]
@@ -94,6 +98,8 @@ These are the values that are divisible by 3:
 
 Your file has been saved as 'div_by_3.npy' successfully!
 ```
+
+### The problems above are focused on Numerical Python which includes arrays and numerical anaylsis. Feel free to let me know if there are anything I can do to amke my code a lot more better! Thank you!
 
 
 
