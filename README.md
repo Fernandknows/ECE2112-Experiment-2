@@ -8,6 +8,23 @@ data analytics. This involves centering and scaling process. Centering means sub
 mean and scaling means dividing with its standard deviation. Mathematically, normalization can be expressed as: 𝑍 =(𝑋 − 𝑥̅) / 𝜎
 In Python, element-wise mean and element-wise standard deviation can be obtained by using .mean() and.std() calls. In this problem, create a random 5 x 5 ndarray and store it to variable X. Normalize X. Save your normalized ndarray as X_normalized.npy <br/>
 
+<p><strong><em>Here are the steps to follow for setting up and processing the matrix:</em></strong></p>
+
+<h5><em>Import and Setup</em></h5>
+<p>The code starts by importing the NumPy library and giving it the alias <code>np</code>, simplifying subsequent code.</p>
+
+<h5><em>Matrix Generation</em></h5>
+<p>A 5x5 matrix filled with random values between 0 and 1 is created using <code>np.random.random()</code>.</p>
+
+<h5><em>Compute Statistics</em></h5>
+<p>The mean and standard deviation of the generated matrix are calculated with <code>X.mean()</code> and <code>X.std()</code>.</p>
+
+<h5><em>Normalize Matrix</em></h5>
+<p>The matrix is normalized by subtracting the mean and dividing by the standard deviation, with the result stored in the variable <code>formula</code>.</p>
+
+<h5><em>Output and Save</em></h5>
+<p>The normalized matrix is printed to the console, then saved to a file named <code>'X_normalized.npy'</code> using <code>np.save()</code>. A success message is displayed to confirm the file has been saved.</p>
+
 **Function:**
 
   ```
@@ -44,8 +61,32 @@ In Python, element-wise mean and element-wise standard deviation can be obtained
 Your file has been saved as 'X_normalized.npy' successfully! 
 ```
 
+<h5><em>Conclusion</em></h5>
+<p>This process efficiently demonstrates generating, analyzing, and normalizing a matrix with NumPy. By creating a random matrix, calculating its statistics, and normalizing the data, we prepare it for further use. Saving the results ensures that the normalized matrix is available for future applications, with a success message confirming the task's completion.</p>
+
 **2. Divisible by 3 Problem:** Create the following 10 x 10 ndarray, Which are the squares of the first 100 positive integers.
-From this ndarray, determine all the elements that are divisible by 3. Save the result as div_by_3.npy
+From this ndarray, determine all the elements that are divisible by 3. Save the result as div_by_3.npy <br/>
+
+<p><strong><em>Here are the steps to follow for processing the array and saving the results:</em></strong></p>
+
+<h5><em>Assign numpy to be np</em></h5>
+<p>Import the NumPy library and assign it the alias <code>np</code>, which simplifies the code that follows.</p>
+
+<h5><em>First 100 positive integers array</em></h5>
+<p>Create an array <code>A</code> containing the first 100 positive integers using <code>np.arange(1, 101)</code>.</p>
+
+<h5><em>Squaring each integer inside the array created</em></h5>
+<p>Square each element of the array <code>A</code> to produce a new array <code>sqrdnum</code> with <code>A ** 2</code>.</p>
+
+<h5><em>Reshaping into 10x10 array</em></h5>
+<p>Reshape the squared numbers array <code>sqrdnum</code> into a 10x10 matrix named <code>reshapedA</code> using <code>sqrdnum.reshape(10, 10)</code>.</p>
+
+<h5><em>Determining values that are divisible by 3</em></h5>
+<p>Extract values from the matrix <code>reshapedA</code> that are divisible by 3, storing them in <code>divisible_by_3</code> with <code>reshapedA[reshapedA % 3 == 0]</code>.</p>
+
+<h5><em>Print the results</em></h5>
+<p>Print the 10x10 matrix of squared numbers and the values divisible by 3 to the console. Save the filtered values to a file named <code>'div_by_3.npy'</code> using <code>np.save()</code>. A success message is printed to confirm the file has been saved.</p>
+
 
 **Function:**
 
@@ -74,7 +115,7 @@ print(divisible_by_3)
 
 np.save('div_by_3.npy', div_by_3)
 
-#Output to prompt the user that the file has been saved as 'div_by_3.npy' succesfully.
+#Output to prompt the user that the file has been saved as 'div_by_3.npy' successfully.
 print("\nYour file has been saved as 'div_by_3.npy' successfully!")
 ```
 **Output Example:**
@@ -99,7 +140,13 @@ These are the values that are divisible by 3:
 Your file has been saved as 'div_by_3.npy' successfully!
 ```
 
-### The problems above are focused on Numerical Python which includes arrays and numerical anaylsis. Feel free to let me know if there are anything I can do to amke my code a lot more better! Thank you!
+<h5><em>Conclusion</em></h5>
+<p>This script illustrates basic NumPy operations: creating and manipulating arrays. It generates the first 100 positive integers, squares them, reshapes the result into a 10x10 matrix, and identifies values divisible by 3. The filtered values are then saved to a file, with a confirmation message indicating the successful save.</p>
+
+
+### The problems above focus on Numerical Python, including arrays and numerical analysis. Feel free to let me know if there is anything I can do to improve my code! Thank you!
+
+
 
 
 
